@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!-- <link rel="stylesheet" href="css/main-sa.css"> -->
+<link rel="stylesheet" href="css/main.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+
+  <title>Project 365 - Day - 4</title>
+</head>
+<body>
+  <div class="center-align">
+    <div class="container-intro">
+      <h1>Project 365</h1>
+      <p>1 project per day - 365 days</p>
+      <h1>Day 5</h1>
+      <h2>JavaScript - Simple If Statements</h2>
+      <p>Credit: Brad Tervesy</p>
+    </div>
+    <!-- Section Block Code -->
+    <section class="section-blockcode">
+      <div class="container left-align">
+        <div class="row">
+          <!-- <div class="col s12 m6"> -->
+            <pre>
+  <code >
+    const id = 100;
+    const color = 'yellow';
+    const name = 'Steve';
+    const age = 70;
+
+  </code>
+</pre>
+<pre>
+<code >
+  // if(something){
+  //   do something
+  // } else {
+  //   do something else
+  // }
+
+
+  // // EQUAL TO
+  if(id == 100){
+    console.log('CORRECT');
+  } else {
+    console.log('INCORRECT');
+  }
+  //
+  // // // NOT EQUAL TO
+  if(id != 101){
+    console.log('CORRECT');
+  } else {
+    console.log('INCORRECT');
+  }
+  //
+  // // // EQUAL TO VALUE & TYPE
+  if(id === 100){
+    console.log('CORRECT');
+  } else {
+    console.log('INCORRECT');
+  }
+  //
+  // // // EQUAL TO VALUE & TYPE
+  if(id !== 100){
+    console.log('CORRECT');
+  } else {
+    console.log('INCORRECT');
+  }
+
+  // Test if undefined
+  if(typeof id !== 'undefined'){
+    console.log(`The ID is ${id}`);
+  } else {
+    console.log('NO ID');
+  }
+
+  // GREATER OR LESS THAN
+  if(id <= 100){
+    console.log('CORRECT');
+  } else {
+    console.log('INCORRECT');
+  }
+
+  // IF ELSE
+
+  const color = 'yellow';
+
+  if(color === 'red'){
+    console.log('Color is red');
+  } else if(color === 'blue'){
+    console.log('Color is blue');
+  } else {
+    console.log('Color is not red or blue');
+  }
+
+  // LOGICAL OPERATORS
+
+  const name = 'Steve';
+  const age = 70;
+
+  // AND &&
+  if(age > 0 && age < 12){
+    console.log(`${name} is a child`);
+  } else if(age >= 13 && age <= 19){
+    console.log(`${name} is a teenager`);
+  } else {
+    console.log(`${name} is an adult`);
+  }
+
+  // OR ||
+  if(age < 16 || age > 65){
+    console.log(`${name} can not run in race`);
+  } else {
+    console.log(`${name} is registered for the race`);
+  }
+
+  // TERNARY OPERATOR
+  console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+  // WITHOUT BRACES
+  if(id === 100)
+    console.log('CORRECT');
+  else
+    console.log('INCORRECT');
+
+  if(id === 100)
+    console.log('CORRECT');
+  else
+    console.log('INCORRECT');
+
+
+</code>
+</pre>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+  <script src="js/day-5-js.js"></script>
+</body>
+</html>
