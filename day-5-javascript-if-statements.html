@@ -1,154 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="css/template.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <!-- <link rel="stylesheet" href="css/main-sa.css"> -->
-<link rel="stylesheet" href="css/main.css">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <title>Project 365 - Day 5</title>
 
-
-  <title>Project 365 - Day - 4</title>
 </head>
+
 <body>
-  <div class="center-align">
-    <div class="container-intro">
-      <h1>Project 365</h1>
-      <p>1 project per day - 365 days</p>
-      <h1>Day 5</h1>
-      <h2>JavaScript - Simple If Statements</h2>
-      <p>Credit: Brad Tervesy</p>
+  <div class="container">
+    <h1 id="projectTitle" class="animated rollIn center indigo-text">Project 365</h1>
+    <h5 id="projectSubTitle" class="animated zoomInDown center indigo-text text-lighten-2">1 project per day - 365 days</h5>
+
+    <p id="projectDescription" class="animated slideInLeft flow-text">My path to becoming a fullstack developer. 1 project per day for 365 days. Projects are pulled from the web or created
+      by me. Each project will have it's on page and have either a CodePen or a GitHub Repository.</p>
+    <!-- place project info here -->
+    <h1 class="indigo-text">Day 5 - JavaScript - Simple If Statements</h1>
+    <p class="flow-text"> Practicing IF Statements.</p>
+    <br>
+    <div class="center-align">
+      <a class="btn center-align" target="_blank" href="https://www.w3schools.com/js/js_if_else.asp">Javascript</a>
+      <br>
+      <br>
     </div>
-    <!-- Section Block Code -->
-    <section class="section-blockcode">
-      <div class="container left-align">
-        <div class="row">
-          <!-- <div class="col s12 m6"> -->
-            <pre>
+  </div>
+  <!-- end of project info -->
+  <!-- place content here -->
+  <section class="section-blockcode">
+    <div class="container left-align">
+      <div class="row">
+        <!-- <div class="col s12 m6"> -->
+        <pre>
+    <code >
+      const id = 100;
+      const color = 'yellow';
+      const name = 'Steve';
+      const age = 70;
+  
+    </code>
+  </pre>
+        <h2 class="red-text">Open Console Log to Check Results</h2>
+        <pre>
   <code >
-    const id = 100;
+    // if(something){
+    //   do something
+    // } else {
+    //   do something else
+    // }
+  
+  
+    // // EQUAL TO
+    if(id == 100){
+      console.log('CORRECT');
+    } else {
+      console.log('INCORRECT');
+    }
+    //
+    // // // NOT EQUAL TO
+    if(id != 101){
+      console.log('CORRECT');
+    } else {
+      console.log('INCORRECT');
+    }
+    //
+    // // // EQUAL TO VALUE & TYPE
+    if(id === 100){
+      console.log('CORRECT');
+    } else {
+      console.log('INCORRECT');
+    }
+    //
+    // // // EQUAL TO VALUE & TYPE
+    if(id !== 100){
+      console.log('CORRECT');
+    } else {
+      console.log('INCORRECT');
+    }
+  
+    // Test if undefined
+    if(typeof id !== 'undefined'){
+      console.log(`The ID is ${id}`);
+    } else {
+      console.log('NO ID');
+    }
+  
+    // GREATER OR LESS THAN
+    if(id <= 100){
+      console.log('CORRECT');
+    } else {
+      console.log('INCORRECT');
+    }
+  
+    // IF ELSE
+  
     const color = 'yellow';
+  
+    if(color === 'red'){
+      console.log('Color is red');
+    } else if(color === 'blue'){
+      console.log('Color is blue');
+    } else {
+      console.log('Color is not red or blue');
+    }
+  
+    // LOGICAL OPERATORS
+  
     const name = 'Steve';
     const age = 70;
-
+  
+    // AND &&
+    if(age > 0 && age < 12){
+      console.log(`${name} is a child`);
+    } else if(age >= 13 && age <= 19){
+      console.log(`${name} is a teenager`);
+    } else {
+      console.log(`${name} is an adult`);
+    }
+  
+    // OR ||
+    if(age < 16 || age > 65){
+      console.log(`${name} can not run in race`);
+    } else {
+      console.log(`${name} is registered for the race`);
+    }
+  
+    // TERNARY OPERATOR
+    console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+  
+    // WITHOUT BRACES
+    if(id === 100)
+      console.log('CORRECT');
+    else
+      console.log('INCORRECT');
+  
+    if(id === 100)
+      console.log('CORRECT');
+    else
+      console.log('INCORRECT');
+  
+  
   </code>
-</pre>
-<h2 class="red-text ligthen-3">Open Console Log to Check Results</h2>
-<pre>
-<code >
-  // if(something){
-  //   do something
-  // } else {
-  //   do something else
-  // }
+  </pre>
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- end of content -->
+  <div class="center-align">
+    <a href="/day-4-javascript-basic-button.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">arrow_back</i>
+    </a>
+
+    <a href="index.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">home</i>
+    </a>
+    <a href="/day-6.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">arrow_forward</i>
+    </a>
+  </div>
+
+  </div>
 
 
-  // // EQUAL TO
-  if(id == 100){
-    console.log('CORRECT');
-  } else {
-    console.log('INCORRECT');
-  }
-  //
-  // // // NOT EQUAL TO
-  if(id != 101){
-    console.log('CORRECT');
-  } else {
-    console.log('INCORRECT');
-  }
-  //
-  // // // EQUAL TO VALUE & TYPE
-  if(id === 100){
-    console.log('CORRECT');
-  } else {
-    console.log('INCORRECT');
-  }
-  //
-  // // // EQUAL TO VALUE & TYPE
-  if(id !== 100){
-    console.log('CORRECT');
-  } else {
-    console.log('INCORRECT');
-  }
+</body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12 center">
+        <div class="container">
+          <header>
+            <h3>Follow Me On Social Media</h3>
+          </header>
+          <ul class="accordion">
+            <li class="tab">
+              <div class="social youtube">
+                <a href="https://www.youtube.com/channel/UCHYUVNwBy0D3hp0vJep87Xg" target="_blank">Youtube</a>
+              </div>
+              <div class="content">
+                <h1>YouTube</h1>
+                <p>Follow me on YouTube for quick how tos with the latest technology in web dev</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social twitter">
+                <a href="https://twitter.com/Ctrlaltdeleteca" target="_blank">Twitter</a>
+              </div>
+              <div class="content">
+                <h1>Twitter</h1>
+                <p>Follow me on Twitter for video and course updates, article & blog shares and more</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social facebook">
+                <a href="https://www.facebook.com/ctrlaltdeleteitservices/" target="_blank">Facebook</a>
+              </div>
+              <div class="content">
+                <h1>Facebook</h1>
+                <p>Follow me on Facebook to stay up to date with Control Alt Delete </p>
+              </div>
+            </li>
 
-  // Test if undefined
-  if(typeof id !== 'undefined'){
-    console.log(`The ID is ${id}`);
-  } else {
-    console.log('NO ID');
-  }
-
-  // GREATER OR LESS THAN
-  if(id <= 100){
-    console.log('CORRECT');
-  } else {
-    console.log('INCORRECT');
-  }
-
-  // IF ELSE
-
-  const color = 'yellow';
-
-  if(color === 'red'){
-    console.log('Color is red');
-  } else if(color === 'blue'){
-    console.log('Color is blue');
-  } else {
-    console.log('Color is not red or blue');
-  }
-
-  // LOGICAL OPERATORS
-
-  const name = 'Steve';
-  const age = 70;
-
-  // AND &&
-  if(age > 0 && age < 12){
-    console.log(`${name} is a child`);
-  } else if(age >= 13 && age <= 19){
-    console.log(`${name} is a teenager`);
-  } else {
-    console.log(`${name} is an adult`);
-  }
-
-  // OR ||
-  if(age < 16 || age > 65){
-    console.log(`${name} can not run in race`);
-  } else {
-    console.log(`${name} is registered for the race`);
-  }
-
-  // TERNARY OPERATOR
-  console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
-
-  // WITHOUT BRACES
-  if(id === 100)
-    console.log('CORRECT');
-  else
-    console.log('INCORRECT');
-
-  if(id === 100)
-    console.log('CORRECT');
-  else
-    console.log('INCORRECT');
-
-
-</code>
-</pre>
-          <!-- </div> -->
+            <li class="tab">
+              <div class="social codepen">
+                <a href="https://codepen.io/Emptyinbox/" target="_blank">CodePen</a>
+              </div>
+              <div class="content">
+                <h1>Codepen</h1>
+                <p>Check out my Codepen for tutorial code, my personal projects and more</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social github">
+                <a href="Check out my Github for tutorial code, my personal projects and more" target="_blank">Github</a>
+              </div>
+              <div class="content">
+                <h1>Github</h1>
+                <p>Check out my Github for tutorial code, my personal projects and more</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-  <script src="js/day-5-js.js"></script>
-</body>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright Control Alt Delete IT Services
+      <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+    </div>
+  </div>
+</footer>
+
 </html>

@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://emptyinbox.github.io/Project365/css/main-sa.css">
+  <link rel="stylesheet" href="css/template.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" />
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -16,105 +17,106 @@
 </head>
 
 <body>
-  <div class="container-intro">
-    <h1>Project 365</h1>
-    <p>1 project per day - 365 days</p>
-    <h1>Day 1</h1>
+  <div class="container">
+    <h1 id="projectTitle" class="animated rollIn center indigo-text">Project 365</h1>
+    <h5 id="projectSubTitle" class="animated zoomInDown center indigo-text text-lighten-2">1 project per day - 365 days</h5>
+    <!-- <h1 class="center indigo-text">Day 1</h1>
     <h2>Social Accordion</h2>
     <p>Credit: Brad Traversy</p>
-    <a class="btn" href="https://codepen.io/bradtraversy/pen/EEWNQP">Brad Traversy CodePen</a>
+    <a class="btn" href="https://codepen.io/bradtraversy/pen/EEWNQP">Brad Traversy CodePen</a> -->
+
+    <p id="projectDescription" class="animated slideInLeft flow-text">My path to becoming a fullstack developer. 1 project per day for 365 days. Projects are pulled from the web or created
+      by me. Each project will have it's on page and have either a CodePen or a GitHub Repository.</p>
+  
+  <h1 class="indigo-text">Day 1 - Social Media Footer</h1>
+  <p class="flow-text"> First project was to start getting the template together for the project.So today the focus was on building the footer which is a tweak off of a coder pen that Brad Traversy built.  The orginal codepen can be found <a href="https://codepen.io/bradtraversy/pen/EEWNQP" target="_blank">here.</a> Or download the my code <a href="https://codepen.io/Emptyinbox/pen/NYYogE" target="_blank">here.</a></p>
+
+</div>
+
+  <div class="center-align">
+    <a href="index.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">arrow_back</i>
+    </a>
+  
+    <a href="index.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">home</i>
+    </a>
+    <a href="/day-2-css-materialize-collections.html">
+      <i class="animated flip large material-icons indigo-text text-lighten-2">arrow_forward</i>
+    </a>
   </div>
 
-  <div class="container-1">
-    <ul class="accordion">
-      <li class="tab">
-        <div class="social youtube">
-          <a href="https://youtube.com/traversymedia" target="_blank">Youtube</a>
-        </div>
-        <div class="content">
-          <h1>YouTube</h1>
-          <p>Follow me on YouTube for tutorials with the latest technology in webv development</p>
-        </div>
-      </li>
-      <li class="tab">
-        <div class="social twitter">
-          <a href="https://twitter.com/traversymedia" target="_blank">Twitter</a>
-        </div>
-        <div class="content">
-          <h1>Twitter</h1>
-          <p>Follow me on Twitter for video and course updates, article & blog shares and more</p>
-        </div>
-      </li>
-      <li class="tab">
-        <div class="social facebook">
-          <a href="https://facebook.com/traversymedia" target="_blank">Facebook</a>
-        </div>
-        <div class="content">
-          <h1>Facebook</h1>
-          <p>Follow me on Facebook to stay up to date with Control Alt Delete</p>
-        </div>
-      </li>
-      <li class="tab">
-        <div class="social linkedin">
-          <a href="https://www.linkedin.com/in/bradtraversy" target="_blank">LinkedIn</a>
-        </div>
-        <div class="content">
-          <h1>CodePen</h1>
-          <p>Connect with me on CodePen. A great place to find Projects and strengthen your coding.</p>
-        </div>
-      </li>
-      <li class="tab">
-        <div class="social instagram">
-          <a href="http://instagram.com/traversymedia" target="_blank">Instagram</a>
-        </div>
-        <div class="content">
-          <h1>Instagram</h1>
-          <p>Follow me on Instragram for a more personal look into my life and work</p>
-        </div>
-      </li>
-      <li class="tab">
-        <div class="social github">
-          <a href="http://github.com/Emptyinbox" target="_blank">Github</a>
-        </div>
-        <div class="content">
-          <h1>Github</h1>
-          <p>Check out my Github for project codes, my personal projects and more</p>
-        </div>
-      </li>
-    </ul>
-    <Br>
-    <Br>
-    <!-- <div class="center-align">
-        <a href="index.html"><i class="large material-icons white-text">arrow_back</i></a>
-      </div> -->
-
   </div>
-  <!-- footer -->
-    <!-- <footer class="page-footer grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright grey darken-3 center-align">
-        <div class="container"> © 2018 Control Alt Delete IT Services
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-      </div>
-    </footer> -->
+
 
 </body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l12 s12 center">
+        <div class="container">
+          <header>
+            <h3>Follow Me On Social Media</h3>
+          </header>
+          <ul class="accordion">
+            <li class="tab">
+              <div class="social youtube">
+                <a href="https://www.youtube.com/channel/UCHYUVNwBy0D3hp0vJep87Xg" target="_blank">Youtube</a>
+              </div>
+              <div class="content">
+                <h1>YouTube</h1>
+                <p>Follow me on YouTube for quick how tos with the latest technology in web dev</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social twitter">
+                <a href="https://twitter.com/Ctrlaltdeleteca" target="_blank">Twitter</a>
+              </div>
+              <div class="content">
+                <h1>Twitter</h1>
+                <p>Follow me on Twitter for video and course updates, article & blog shares and more</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social facebook">
+                <a href="https://www.facebook.com/ctrlaltdeleteitservices/" target="_blank">Facebook</a>
+              </div>
+              <div class="content">
+                <h1>Facebook</h1>
+                <p>Follow me on Facebook to stay up to date with Control Alt Delete </p>
+              </div>
+            </li>
+
+            <li class="tab">
+              <div class="social codepen">
+                <a href="https://codepen.io/Emptyinbox/" target="_blank">CodePen</a>
+              </div>
+              <div class="content">
+                <h1>Codepen</h1>
+                <p>Check out my Codepen for tutorial code, my personal projects and more</p>
+              </div>
+            </li>
+            <li class="tab">
+              <div class="social github">
+                <a href="Check out my Github for tutorial code, my personal projects and more" target="_blank">Github</a>
+              </div>
+              <div class="content">
+                <h1>Github</h1>
+                <p>Check out my Github for tutorial code, my personal projects and more</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright Control Alt Delete IT Services
+      <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+    </div>
+  </div>
+</footer>
 
 </html>
