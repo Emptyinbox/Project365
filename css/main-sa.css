@@ -7,10 +7,6 @@
 body {
   background-color: #222;
   font-family: Arial, Helvetica, sans-serif;
-
-}
-p {
-  font-size: 2rem;
 }
 
 @font-face {
@@ -18,27 +14,10 @@ p {
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
 }
-.container-intro{
-  color: #fff;
-  margin: 25px;
-  text-align: center;
-  line-height: 3.4rem;
-}
-.container-intro h1 {
-  font-size: 4rem;
-}
-.container-intro .btn {
-  text-transform: capitalize;
-}
-.container-intro a {
-  text-decoration: none;
-  color: #fff
-}
 
-.container-1 {
+.container {
   margin: 50px auto;
   width: 90%;
- min-height: 100%;
 }
 
 header h1 {
@@ -56,7 +35,6 @@ header h1 {
   overflow: hidden;
   height: 200px;
   font-size: 0;
-
 }
 
 .tab {
@@ -150,7 +128,7 @@ header h1 {
 
 .linkedin a:before,
 .linkedin a:after {
-  content: '\f216';
+  content: '\f208';
 }
 .linkedin a:after {
   background-color: #00a9cd;
